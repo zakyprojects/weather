@@ -1,0 +1,108 @@
+/* Weather Icons & Animations */
+.weather-icon {
+    margin: 1rem 0;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    width: 100px;
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Cloud Animation */
+.icon.cloud {
+    color: #ecf0f1;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Rain Animation */
+.icon.rain {
+    color: #3498db;
+    animation: rainDrop 2s ease-in-out infinite;
+}
+
+@keyframes rainDrop {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(5px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Snow Animation */
+.icon.snow {
+    color: #fff;
+    animation: drift 4s ease-in-out infinite;
+}
+
+@keyframes drift {
+    0% {
+        transform: translateX(0) rotate(0deg);
+    }
+
+    25% {
+        transform: translateX(5px) rotate(5deg);
+    }
+
+    75% {
+        transform: translateX(-5px) rotate(-5deg);
+    }
+
+    100% {
+        transform: translateX(0) rotate(0deg);
+    }
+}
+
+/* Thunder Animation */
+.icon.thunder {
+    color: #f1c40f;
+    animation: flash 2s infinite;
+}
+
+@keyframes flash {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    55% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 0.5;
+    }
+}
+
+.icon.default {
+    color: var(--text-secondary);
+}
