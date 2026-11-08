@@ -3,16 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SkyCast, a simple weather app</title>
-  <meta name="description" content="Search any city or use your location to see the weather now, the next 24 hours and the next 7 days.">
+  <title>SkyCast: Simple Weather Forecast App | zakyprojects</title>
+  <meta name="description" content="A simple weather app with a free forecast. Search any city or use your location to see the weather now, the next 24 hours and the next 7 days.">
   <link rel="canonical" href="https://zakyprojects.github.io/weather/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Zakria Khan">
-  <meta property="og:title" content="SkyCast, a simple weather app">
-  <meta property="og:description" content="Search any city or use your location to see the weather now, the next 24 hours and the next 7 days.">
+  <meta property="og:title" content="SkyCast: Simple Weather Forecast App | zakyprojects">
+  <meta property="og:description" content="A simple weather app with a free forecast. Search any city or use your location to see the weather now, the next 24 hours and the next 7 days.">
   <meta property="og:url" content="https://zakyprojects.github.io/weather/">
-  <meta name="twitter:card" content="summary">
-  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "SkyCast", "url": "https://zakyprojects.github.io/weather/", "description": "Search any city or use your location to see the weather now, the next 24 hours and the next 7 days.", "applicationCategory": "WeatherApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "author": {"@type": "Person", "name": "Zakria Khan", "url": "https://zakyprojects.github.io/"}}</script>
+  <meta property="og:image" content="https://zakyprojects.github.io/weather/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "SkyCast", "url": "https://zakyprojects.github.io/weather/", "description": "A simple weather app with a free forecast. Search any city or use your location to see the weather now, the next 24 hours and the next 7 days.", "applicationCategory": "WeatherApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "author": {"@type": "Person", "name": "Zakria Khan", "url": "https://zakyprojects.github.io/"}}</script>
   <meta name="theme-color" content="#f7f7f5">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preload" href="fonts/figtree.woff2" as="font" type="font/woff2" crossorigin>
@@ -25,6 +28,7 @@
       if (t === 'dark') document.documentElement.dataset.theme = 'dark';
     } catch (e) {}
   </script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is SkyCast free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. It is free and needs no account or key."}}, {"@type": "Question", "name": "Where does the weather data come from?", "acceptedAnswer": {"@type": "Answer", "text": "From Open-Meteo, a free weather service."}}, {"@type": "Question", "name": "Does it save my location?", "acceptedAnswer": {"@type": "Answer", "text": "No. Your location is only used to load the weather for that moment."}}, {"@type": "Question", "name": "Who made it?", "acceptedAnswer": {"@type": "Answer", "text": "Zakria Khan, a web developer. You can see his other projects on zakyprojects.github.io."}}]}</script>
 </head>
 <body>
   <header class="top">
@@ -106,7 +110,23 @@
     </div>
   </main>
 
-  <footer class="foot wrap">
+  <section class="about" aria-labelledby="about-title">
+    <h2 id="about-title">About SkyCast</h2>
+    <p>SkyCast is a simple weather app. Search any city or use your location to see the weather now, the next 24 hours and the next 7 days. It is a practice project by Zakria Khan (zakyprojects).</p>
+    <h3>How to use</h3>
+    <ol>
+      <li>Type a city name and pick it from the list, or tap My location.</li>
+      <li>See the weather now, then scroll for the next 24 hours and 7 days.</li>
+      <li>Switch between °C and °F if you need to.</li>
+    </ol>
+    <h3>Questions</h3>
+    <details><summary>Is SkyCast free?</summary><p>Yes. It is free and needs no account or key.</p></details>
+    <details><summary>Where does the weather data come from?</summary><p>From Open-Meteo, a free weather service.</p></details>
+    <details><summary>Does it save my location?</summary><p>No. Your location is only used to load the weather for that moment.</p></details>
+    <details><summary>Who made it?</summary><p>Zakria Khan, a web developer. You can see his other projects on zakyprojects.github.io.</p></details>
+  </section>
+
+<footer class="foot wrap">
     <p>Built by <a href="https://zakyprojects.github.io/">Zakria Khan</a>. Weather data from <a href="https://open-meteo.com/">Open-Meteo</a>.</p>
     <p><a href="https://github.com/zakyprojects/weather">Source code</a></p>
   </footer>
